@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>responsive-nav</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- <link rel="stylesheet" href="./test.css" /> -->
+    <title>responsive-nav test</title>
+    <link rel="stylesheet" href="./test.css" />
   </head>
   <body>
     <div class="container">
@@ -13,8 +12,8 @@
         <a href="#"
           ><img
             src="https://2015.appsecusa.org/c/wp-content/uploads/2015/05/Netflix_2014_logo.svg_.png"
-            alt="logo"
             class="logo"
+            alt="logo"
         /></a>
 
         <ul class="nav">
@@ -26,36 +25,14 @@
         </ul>
       </div>
 
-      <div class="bar on"><span></span></div>
+      <div class="bar"><span></span></div>
 
       <div class="main">
         <img
           src="https://www.techquila.co.in/wp-content/uploads/2020/09/My-octopus-teacher-fi-e1599505789801.jpg"
-          alt="octopus teacher "
+          alt="main picture"
         />
       </div>
-      <!-- <h1 class="text">HTML</h1> -->
     </div>
-
-    <!-- 자바스크립트 시작 -->
-    <script>
-      const bar = document.querySelector(".bar");
-      const nav = document.querySelector(".nav");
-      const list = document.querySelectorAll(".nav a");
-
-      //  console.log(link);
-
-      bar.addEventListener("click", function () {
-        bar.classList.toggle("on");
-        nav.classList.toggle("on");
-      });
-
-      link.forEach((item) => {
-        item.addEventListener("click", function () {
-          bar.classList.remove("on");
-          nav.classList.remove("on");
-        });
-      });
-    </script>
   </body>
 </html>
