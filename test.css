@@ -42,6 +42,7 @@ img {
   height: 100vh;
   background: #111;
   padding-top: 80px;
+  transition: left 0.3s;
   /* display: none; */
 }
 
@@ -77,14 +78,41 @@ img {
   height: 2px;
   background: #fff;
   position: relative;
+  transition: background 0.3s;
 }
 
 .bar span::before {
-  position: absolute;
-  top: -10px;
-  left: 0;
   content: "";
+  position: absolute;
+  top: -12px;
+  left: 0;
+  /* content: ""; */
   width: 100%;
   height: 2px;
   background: #fff;
+}
+
+.bar span::after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+
+  width: 100%;
+  height: 2px;
+  background: #fff;
+}
+
+.bar.on span {
+  background: transparent;
+}
+
+.bar.on span::before {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+.bar.on span::after {
+  bottom: 0;
+  transform: rotate(45deg);
 }
