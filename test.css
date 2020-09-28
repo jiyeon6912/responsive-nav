@@ -66,7 +66,7 @@ img {
   right: 16px;
   width: 30px;
   height: 30px;
-  background: red;
+  /* background: red; */
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -115,4 +115,68 @@ img {
 .bar.on span::after {
   bottom: 0;
   transform: rotate(45deg);
+}
+
+/* 반응형 디자인 */
+@media (min-width: 768px) {
+  /*min-width: 768px 브라우저 너비가 768px 이상일때*/
+  .bar {
+    display: none;
+  }
+
+  .nav {
+    position: initial;
+    top: initial;
+    left: initial;
+    width: initial;
+    height: initial;
+    background: initial;
+    padding-top: initial;
+    /* background: red; */
+    display: flex;
+    margin-left: auto;
+    padding-right: 16px;
+  }
+
+  .nav li a {
+    font-size: 16px;
+
+    /* text-align: center; */
+    padding: 0 18px;
+    color: #ccc;
+    border-bottom: none;
+  }
+
+  .nav li a:hover {
+    color: #fff;
+  }
+}
+
+@media (min-width: 992px) {
+  .header {
+    height: 90px;
+  }
+
+  .logo {
+    width: 160px;
+  }
+
+  .nav li a {
+    font-size: 18px;
+    margin: 0 14px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    height: 110px;
+  }
+
+  .log0 {
+    width: 180px;
+  }
+  .nav li a {
+    font-size: 22px;
+    margin: 0, 18px;
+  }
 }
